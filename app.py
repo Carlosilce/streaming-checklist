@@ -6,5 +6,9 @@ app = Flask(__name__)
 def inicio():
     return render_template("index.html")
 
+@app.route("/checklist")
+def checklist():
+    return render_template("checklist.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
